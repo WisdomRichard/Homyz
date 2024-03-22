@@ -1,0 +1,36 @@
+.App{
+    position: relative;
+}
+
+.App>:nth-child(1){
+    background: var(--black);
+    position: relative;
+}
+
+.white-gradient{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background: rgba(225, 225, 225, 0.522);
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-top: 50px;
+    filter: blur(85px);
+}
+.toTheTop{
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem 1rem 1rem;
+}
+.arrow-up{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 35px;
+    height: 30px;
+    align-items: center;
+    background: var(--blue-gradient);
+    border-radius: 100%;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+}

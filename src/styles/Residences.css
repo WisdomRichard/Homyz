@@ -1,0 +1,89 @@
+.residences-wrapper {
+    overflow: visible;
+
+    .residences-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .residences-head {
+        margin-bottom: 1rem;
+    }
+
+    .residences-card {
+        gap: 0.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+        max-width: max-content;
+        margin: auto;
+        transition: all 300ms ease-in;
+    }
+
+    .residences-card > img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .residences-card > :nth-child(2) {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .residences-card > :nth-child(3) {
+        font-size: 30px;
+    }
+
+    .residences-card > :nth-child(4) {
+        font-size: 0.7rem;
+        width: 15rem;
+    }
+
+    .residences-card:hover {
+        scale: 1.025;
+        cursor: pointer;
+        background: linear-gradient(
+                180deg,
+                rgba(225, 225, 225, 0) 0%,
+                rgba(136, 160, 225, 0.46) 217.91%
+        );
+        box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+    }
+
+    .swiper-horizontal {
+        overflow: visible;
+    }
+
+    .residences-buttons {
+        position: absolute;
+        padding: 2rem;
+        gap: 1rem;
+        top: -70px;
+        right: 0;
+    }
+
+    .residences-buttons button {
+        font-size: 1.2rem;
+        padding: 0.2rem 0.8rem;
+        color: blue;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .residences-buttons > :nth-child(1) {
+        background-color: #eeeeff;
+    }
+
+    .residences-buttons > :nth-child(2) {
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    }
+    @media (max-width: 700px){
+        .residences-head{
+            align-items: center;
+        }
+        .residences-buttons{
+            position: initial;
+        }
+    }
+}

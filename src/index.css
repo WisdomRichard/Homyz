@@ -74,12 +74,27 @@ a {
 
 .secondaryText {
   color: rgb(140 139 139);
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 .orangeText {
   color: orange;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.button{
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  color: white;
+  background: var(--blue-gradient);
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /* media queries */
